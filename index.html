@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<!--
+Developer's Name : Md. Rezwan Saki Alin
+Website : alinsworld.com
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alinsworld</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Font -->    
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Essential JavaScript Files -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src="js/jquery-2.1.1.min.js"></script>  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- /Essential JavaScript Files -->
+    
+    <!-- Extra CSS Files -->
+    <link rel="stylesheet" href="css/mystyle.css"> <!-- My own css file -->
+    <!-- /Extra CSS Files -->
+    
+    <!-- Extra JavaScript Files -->
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    
+    <script src="js/sliderbanner/jquery.sequence-min.js"></script>  <!-- slider banner -->
+    
+    <!-- /Extra JavaScript Files -->
+    
+     
+     
+      <!-- go to top -->
+      <script>
+
+          $(function(){
+
+              $(document).on( 'scroll', function(){
+
+                  if ($(window).scrollTop() > 100) {
+                      $('.scroll-top-wrapper').addClass('show');
+                  } else {
+                      $('.scroll-top-wrapper').removeClass('show');
+                  }
+              });
+          });
+
+          $(function(){
+
+              $(document).on( 'scroll', function(){
+
+                  if ($(window).scrollTop() > 100) {
+                      $('.scroll-top-wrapper').addClass('show');
+                  } else {
+                      $('.scroll-top-wrapper').removeClass('show');
+                  }
+              });
+
+              $('.scroll-top-wrapper').on('click', scrollToTop);
+          });
+
+          function scrollToTop() {
+              verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+              element = $('body');
+              offset = element.offset();
+              offsetTop = offset.top;
+              $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+          }
+      </script>
+      <!-- / go to top -->
+      
+      
+      <script src="js/sliderbanner/template.js"></script>  <!-- slide banner (must be used after go to top javascript function) -->
+      
+
+      <style>
+          /* go to top */
+          .scroll-top-wrapper {
+              position: fixed;
+              visibility: hidden;
+              overflow: hidden;
+              text-align: center;
+              z-index: 99999999;
+              width: 64px;
+              height: 64px;
+              right: 5px;
+              bottom: 32px;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              border-bottom-left-radius: 10px;
+              -webkit-transition: all 0.5s ease-in-out;
+              -moz-transition: all 0.5s ease-in-out;
+              -ms-transition: all 0.5s ease-in-out;
+              -o-transition: all 0.5s ease-in-out;
+              transition: all 0.5s ease-in-out;
+          }
+          .scroll-top-wrapper.show:hover {
+              opacity: 0.8;
+              filter: alpha(opacity=80); /* For IE8 and earlier */
+          }
+          .scroll-top-wrapper.show {
+              visibility:visible;
+              cursor:pointer;
+              opacity: 0.4;
+              filter: alpha(opacity=40); /* For IE8 and earlier */
+          }
+          /* /go to top */
+      </style>
+      <!-- /Go To Top -->
+      
+      
+    
+  </head>
+
+  <body>
+   
+    <!-- main container -->
+    <div class="container-fluid" id="main_container">       
+       <!-- navigation bar -->
+       <div class="row" id="navigation_bar">
+            <div class="navbar navbar-default navbar-fixed-top" rol="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+
+                    <span class="navbar-brand">
+                        <img src="img/logo.png" alt="logo">
+                    </span>
+                </div>
+               
+                    <div class="navbar-collapse collapse" id="main_menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about_wrap">About</a></li>
+                            <li><a href="https://www.flickr.com/photos/30668952@N05/sets/72157639965432594/">Portfolio</a></li>
+                            <li><a href="http://blog.alinsworld.com/">Blog</a></li>
+                            <li><a href="#stay_in_touch">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>             
+            </div>
+       </div> <!-- /navigation bar -->
+       
+       <!-- slider banner -->
+       <div class="row">
+           <div class="homepage-slider">
+               <div id="sequence">
+                   <ul class="sequence-canvas">
+                       <!-- Slide 1 -->
+                       <li class="bg3">
+                           <!-- Slide Title -->
+                           <h2 class="title">REZWAN SAKI</h2>
+                           <!-- Slide Text -->
+                           <h3 class="subtitle">Designer & Developer <br> <br>
+                               <p style="color:#6fc5f2;">Hello, I am Alin, designer and developer. I like to spend my days with developing website and mobile apps. </p> <br>
+                               <a href="#about_wrap" class="btn btn-blue">Read More</a></h3>
+                           <!-- Slide Image -->
+                           <img class="slide-img" src="img/homepage-slider/banner_elmnt_r_1.png" alt="banner_elmnt_r_1.png" />
+                       </li>
+                       <!-- End Slide 1 -->
+                       <!-- Slide 2 -->
+                       <li class="bg2">
+                           <!-- Slide Title -->
+                           <h2 class="title">Responsive Web Design</h2>
+                           <!-- Slide Text -->
+                           <h3 class="subtitle">Designing website for multiple devices. <br> <br>
+                               <p style="color:#6fc5f2;">I develop website for multiple devices, such as desktop, laptop, tab and mobile phone. </p> <br>
+                               <a href="#about_wrap" class="btn btn-blue">Read More</a> </h3>
+                           <!-- Slide Image -->
+                           <img class="slide-img" src="img/homepage-slider/banner_elmnt_r_2.png" alt="banner_elmnt_r_2.png" />
+                       </li>
+                       <!-- End Slide 2 -->
+                       <!-- Slide 3 -->
+                       <li class="bg1">
+                           <!-- Slide Title -->
+                           <h2 class="title">Mobile Apps</h2>
+                           <!-- Slide Text -->
+                           <h3 class="subtitle">Designing and developing mobile apps. <br> <br>
+                               <p style="color:#6fc5f2;">I develop apps for mobile. I try to develop mobile apps for Bangladeshi people. Now I am working with android development. </p> <br>
+                               <a href="#about_wrap" class="btn btn-blue">Read More</a> </h3>
+                           <!-- Slide Image -->
+                           <img class="slide-img" src="img/homepage-slider/banner_elmnt_r_3.png" alt="banner_elmnt_r_3.png" />
+                       </li>
+                       <!-- End Slide 3 -->
+                   </ul>
+                   <div class="sequence-pagination-wrapper">
+                       <ul class="sequence-pagination">
+                           <li>1</li>
+                           <li>2</li>
+                           <li>3</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div> <!-- /slider banner -->
+       
+       <!-- Play music -->
+       <!-- <audio autoplay>
+            <source src="music.mp3">
+        </audio>--><!-- /Play music -->
+       
+       <!-- content -->
+       <div class="row">
+           <div class="container-fluid">
+              
+               <!-- Go to top -->
+               <div class="scroll-top-wrapper">
+                   <!-- if use span then need internet to display this icon -->
+                   <img src="img/up.png" alt="go_to_up">
+               </div>
+               <!-- /Go to top -->
+              
+               <!-- About -->
+               <div class="container">
+                    <div class="row">
+                    <div class="col-md-8 col-sm-8" id="about_wrap">
+                       <br>
+                        <div class="in-press press-wired">
+							<a href="#">
+							    <br>
+							    Hello, I'm Rezwan Saki Alin, designer and developer. I like to spend my days with developing websites and mobile apps. I also like graphics and designing too. I've worked with some of web developing firms. In leisure time, I like to listen musics, reading books, gossiping, etc. I like to watch movies. I'm very much interested about science and technology. If you are curious about my works, you could check my portfolio. For fresh news and thoughts, go straight to the blog. I'm working anyway, as many of my hobbies give me ideas to put into my work. Thanks for visiting my website. 
+							</a>
+						</div>
+                    </div> <!-- /about -->
+                    
+                    <!-- my photo -->
+                    <div class="col-md-4 col-sm-4" id="my_photo">
+                        <img src="img/Alin.jpg" width="58%" alt="my_photo" class="my-photo-border">
+                    </div>
+                </div> <!-- /my photo -->
+               </div>
+                
+                <!-- Essential links -->
+                <div class="container">
+                    <div class="row">
+                   <!-- blog -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body" style="text-align:center;">
+                                 <img src="img/Essential_links/blog.png" alt="">
+                                <h3><b>Blog</b></h3>
+		        			    <p>My Bangla blog. It's real name 'Alinervubon'. I like to write in here and try to share my idea, tutorial, my works related post etc. If your device supports 'Unicode' Bangla font and you are interested about my blog, please visit this.</p>
+		        			    <a href="http://blog.alinsworld.com/" class="btn btn-red">Visit Now</a>
+                            </div>
+                        </div>
+                    </div> <!-- /blog -->
+                    
+                    <!-- portfolio -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body" style="text-align:center;">
+                                <img src="img/Essential_links/portfolio.png" alt="">
+                                <h3><b>Portfolio</b></h3>
+		        			    <p>I like to work with graphics and designing, web and android developing and 2D animation. I try to share my works. But this site is not available now so I share some of my works from 'Flickr.com'. If you are interested, please visit this. <br></p>
+		        			    <a href="https://www.flickr.com/photos/30668952@N05/sets/72157639965432594/" class="btn btn-yellow">Visit Now</a>
+                            </div>
+                        </div>
+                    </div> <!-- /portfolio -->
+                    
+                    <!-- my writings -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-default">
+                           <div class="panel-body" style="text-align:center;">
+                                <img src="img/Essential_links/mywritings.png" alt="">
+                               <h3><b>My Writings</b></h3>
+		        			    <p>I'm not a professional writer and I can't write very well. But writing is my hobby, so I write. In here, I share some of my writings. If you are interested, please visit this.  <br><br><br></p>
+		        			    <a href="http://blog.alinsworld.com/archives/category/my_personal/mytry/my-writings" class="btn btn-green">Visit Now</a>
+                            </div>
+                        </div>
+                    </div> <!-- /my writings -->
+                    
+                    <!-- gallery -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body" style="text-align:center;">
+                                <img src="img/Essential_links/gallery.png" alt="">
+                                <h3><b>Gallery</b></h3>
+		        			    <p>I store and share my photos in this gallery. So I can access them from everywhere. In here, I store my photos of my family, my friends and my works of ‘Graphics & Designing’. If you are interested, please click the button of the bellow. </p>
+		        			    <a href="https://www.flickr.com/photos/30668952@N05" class="btn btn-blue" id="btn_gallery">Visit Now</a>
+                            </div>
+                        </div> 
+                    </div> <!-- /gallery -->
+                </div> <!-- /essential links -->
+               </div> <!-- /Essential Links -->
+
+                <!-- Stay in touch -->
+                <div class="container stay-in-touch" id="stay_in_touch">
+                    <div class="row underline">
+                        <h1>STAY IN TOUCH</h1>
+                    </div> <!-- /Stay in touch -->
+                    <div class="row social">                     
+						<ul>
+                            <li><a href="https://www.facebook.com/rezwan.alin"><img src="img/socialimages/socialicon_fb.png" alt="facebook" title="facebook"/></a></li>
+                            <li><a href="skype:rezwansaki?call"><img src="img/socialimages/socialicon_skype.png" alt="skype" title="skype"/></a></li>
+                            <li><a href="http://twitter.com/rezwansaki"><img src="img/socialimages/socialicon_twitter.png" alt="twitter" title="twitter"/></a></li>
+                            <li><a href="mailTo:alin_cis@yahoo.com"><img src="img/socialimages/socialicon_yahoo.png" alt="yahoo" title="yahoo"/></a></li>
+                            <li><a href="//plus.google.com/u/0/109259615058256873859?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;"><img src="img/socialimages/socialicon_googleplus.png" alt="google_plus" title="google+"></a></li>
+                            <li><a href="http://www.flickr.com/photos/30668952@N05"><img src="img/socialimages/socialicon_flickr.png" alt="" title="flickr"/></a></li>
+                            <li><a href="https://github.com/rezwansaki"><img src="img/socialimages/socialicon_gitHub.png" alt="gitHub" title="gitHub" /></a></li>
+                        </ul>
+					</div>
+               </div>
+           </div>
+       </div> <!-- /content -->
+        
+       <!-- footer -->
+       <div class="row" id="footer_wrap">
+           <div class="container-fluid">
+              <!-- footer top -->
+               <div class="row" id="footer_top">
+                  <!-- navigate -->
+                  <div class="col-md-4 col-sm-6 hidden-xs navigate">
+                    <h1>NAVIGATE</h1>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="http://blog.alinsworld.com/">Blog</a></li>
+                        <li><a href="#stay_in_touch">Contact</a></li>
+                    </ul> 
+                  </div> <!-- /navigate -->
+                  
+                  <!-- gallery -->
+                  <div class="col-md-4 hidden-sm hidden-xs flicker">
+                    <div class="row">
+                        <h1>FLICKER</h1>   
+                    </div>
+                     
+                    <div class="row">
+                        <p>
+                            I love ‘Flickr’. Because, I can store, keep backup and share my photos easily. Then I can access them from everywhere. In here, I store my photos of my family, my friends and my works of ‘Graphics & Designing’. If you are interested, please click the button of bellow. 
+                        </p>      
+                    </div>
+					
+				    <div class="row">
+                        <a href="https://www.flickr.com/photos/30668952@N05"><img src="img/flickr/photo1.png" alt="image"></a>
+                        <a href="https://www.flickr.com/photos/30668952@N05"><img src="img/flickr/photo2.png" alt="image"></a>
+                        <a href="https://www.flickr.com/photos/30668952@N05"><img src="img/flickr/photo3.png" alt="image"></a>
+                        <a href="https://www.flickr.com/photos/30668952@N05"><img src="img/flickr/photo4.png" alt="image"></a>
+                        <a href="https://www.flickr.com/photos/30668952@N05"><img src="img/flickr/photo5.png" alt="image"></a>
+                        <a href="https://www.flickr.com/photos/30668952@N05"><img src="img/flickr/photo6.png" alt="image"></a>
+                        <a href="https://www.flickr.com/photos/30668952@N05"><img src="img/flickr/photo7.png" alt="image"></a>
+                        <a href="https://www.flickr.com/photos/30668952@N05"><img src="img/flickr/photo8.png" alt="image"></a>
+                        <a href="https://www.flickr.com/photos/30668952@N05"><img src="img/flickr/photo9.png" alt="image"></a>
+                        <a href="https://www.flickr.com/photos/30668952@N05"><img src="img/flickr/photo10.png" alt="image"></a>
+                    </div>
+                    
+                    <div class="row" style="text-align:center; margin-top:5px;">
+                        <a href="https://www.flickr.com/photos/30668952@N05" class="btn btn-red">Visit Now</a>
+                    </div>
+                  </div> <!-- /gallery -->
+                  
+                  <!-- contact -->
+                  <div class="col-md-4 col-sm-6 col-xs-12  contact">
+                        <div class="row text">
+                            <h1>CONTACT</h1>
+                            <h2>Md. Rezwan Saki Alin</h2>
+                            <h3>Graphics Designer & Web Developer</h3>
+                            <p>Email :<a href="#"> rezwansaki@gmail.com</a></p>
+					    </div>
+                        <div class="row social-small">
+                            <a href="https://www.facebook.com/rezwan.alin"><img src="img/socialimages/socialicon_fb_64.png" alt="facebook"/></a>
+                            <a href="skype:rezwansaki?call"><img src="img/socialimages/socialicon_skype_64.png" alt="skype"/></a>
+                            <a href="http://twitter.com/rezwansaki"><img src="img/socialimages/socialicon_twitter_64.png" alt="twitter"/></a>
+                            <a href="mailTo:alin_cis@yahoo.com"><img src="img/socialimages/socialicon_yahoo_64.png" alt="yahoo"/></a>
+                            <a href="//plus.google.com/u/0/109259615058256873859?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;"><img src="img/socialimages/socialicon_googleplus_64.png" alt="google_plus"></a>
+                        </div>
+                  </div> <!-- /contact -->
+               </div> <!-- /footer top -->
+               
+               <!-- footer bottom -->
+               <div class="row" id="footer_bottom">
+                  <!-- copyright info -->
+                   <div class="col-md-6 col-xs-12 left-align">
+                       Copyright &copy; 2014 Alinsworld | All Rights Reserved
+                   </div> <!-- /copyright info -->
+                   
+                   <!-- designed and developed by -->
+                   <div class="col-md-6 col-xs-12 right-align">
+                       Designed and Developed by Alin.
+                   </div> <!-- /designed and developed by -->
+               </div> <!-- /footer bottom -->
+           </div>
+       </div> <!-- /footer -->
+       
+       
+        
+    </div> <!-- /main container -->
+    
+    
+    
+  </body>
+  
+</html>
