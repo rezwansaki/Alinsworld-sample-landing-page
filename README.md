@@ -1,5 +1,5 @@
 Project Name : Alinsworld 
-Type : My own personal website
+Type : My own personal website (I don't use this for me, this is a sample project.) 
 
 Developer : Alin (alinsworld.com)
 
