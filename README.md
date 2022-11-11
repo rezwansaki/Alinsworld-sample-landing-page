@@ -3,7 +3,7 @@ Type : My own personal website, but I don't use this for me. This is a sample of
 
 Developer : Alin (alinsworld.com)
 
-Live Demo : http://rezwansaki.github.io/Alinsworld/index.html
+Live Demo : http://rezwansaki.github.io/Alinsworld-sample-landing-page/index.html
 
 Completed date : November-2014
 Design (make full psd template) : by Alin (using Adobe Photoshop CS5)
