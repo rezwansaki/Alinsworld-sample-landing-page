@@ -1,0 +1,28 @@
+
+
+  Application Name : "Name Says"
+  Applilcation Version : "1.0.0"
+  Developed Date : Start 17-February-2015 and Complete 19-February-2015 
+  
+  Target Android Version : 
+  Target OS : Android 3.X
+
+  Target Device : Symphony W128 
+
+  Developer's Info : Md. Rezwan Saki Alin 
+                     http://www.alinsworld.com
+                     rezwansaki@gmail.com
+
+
+  About This Application : 
+
+	Any one know the meaning of their nick name. 
+
+
+  Features : 
+
+	1. Small animation;
+	3. Simple design;
+	4. 'Move to SD Card' supported;
+	5. Android 4.2 and Kitkat 4.4.2 fully and perfect supported. 
+	6. Font embed.

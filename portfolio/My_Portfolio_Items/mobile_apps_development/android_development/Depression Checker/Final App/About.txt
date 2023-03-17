@@ -1,0 +1,33 @@
+
+
+  Application Name : "Depression Checker Bangla"
+  Applilcation Version : "1.0.1"
+  Developed Date : Start 26-December-2014 and Complete 04-January-2015 
+  
+  Target Android Version : 
+  Target OS : Android 3.X
+
+  Target Device : Symphony W128 
+
+  Developer's Info : Md. Rezwan Saki Alin 
+                     http://www.alinsworld.com
+                     rezwansaki@gmail.com
+
+
+  About This Application : 
+
+	Anyone can check depression by answering 9 question in Bangla. 
+
+	Note : Press 'Home' button to exit this app. 
+
+
+  What's New :
+	1. Bug fix and add a close button. 
+
+  Features : 
+
+	1. Bangla Unicode (Device by default font) supported;
+	2. Small animation;
+	3. Simple design;
+	4. 'Move to SD Card' supported;
+	5. Android 4.2 fully and perfect supported. 

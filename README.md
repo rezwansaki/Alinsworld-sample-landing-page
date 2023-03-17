@@ -1,14 +1,23 @@
-Project Name : Alinsworld 
-Type : My own personal website, but I don't use this for me. This is a sample of my landing page. 
+# Alinsworld (Demo)
 
-Developer : Alin (alinsworld.com)
+My own personal demo website. <br>
+Responsive for : Desktop, Tab, Mobile device <br>
 
-Live Demo : http://rezwansaki.github.io/Alinsworld-sample-landing-page/index.html
+<ul>
+<li>Alinsworld Landing Page</li>
+<li>Alinsworld Portfolio Page</li>
+</ul>
 
-Completed date : November-2014
-Design (make full psd template) : by Alin (using Adobe Photoshop CS5)
+Live Demo : http://rezwansaki.github.io/Alinsworld-sample-landing-page/index.html <br>
 
-Using to develope : Bootstrap 3.2.0, HTML5, CSS3, JavaScript, jQuery 
-Responsive for : Desktop, Tab, Mobile device 
+## Developer
 
-Design and developed by Me.
+Md. Rezwan Saki Alin (https://www.alinsworld.com)
+
+## Last Update
+
+Start date may be: April-2013 and Last update: November-2014
+
+## Used (Tools, Softwares, Languages, Framework etc)
+
+Adobe Photoshop CS5, Bootstrap 3.2.0, HTML5, CSS3, JavaScript, jQuery

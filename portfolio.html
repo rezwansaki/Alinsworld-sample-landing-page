@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<!--
+Developer's Name : Md. Rezwan Saki Alin
+Website : alinsworld.com
+Last Modify Date : 04-April-2017, 12:10 AM 
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alinsworld : Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Font -->    
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Essential JavaScript Files -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src="js/jquery-2.1.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- /Essential JavaScript Files -->
+    
+    <!-- Extra CSS Files -->
+    <link rel="stylesheet" href="css/mystyle.css"> <!-- My own css file -->
+    <!-- /Extra CSS Files -->
+    
+    <!-- Extra JavaScript Files -->
+    <script src="portfolio/js/myScript.js"></script>
+    
+    <script src="portfolio/js/isotope.pkgd.min.js"></script> <!-- Filter System -->
+    
+    <!-- Pretty Photo -->
+    <link rel="stylesheet" href="portfolio/css/prettyPhoto.css" type="text/css"/>
+    <script src="portfolio/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <!-- /Pretty Photo -->
+    
+    <!-- Lazy Load -->
+    <script src="portfolio/js/jquery.lazyload.min.js"></script>
+    <!-- /Lazy Load -->
+    
+    <!-- /Extra JavaScript Files -->
+    
+          
+      <!-- go to top -->
+      <script>
+
+          $(function(){
+
+              $(document).on( 'scroll', function(){
+
+                  if ($(window).scrollTop() > 100) {
+                      $('.scroll-top-wrapper').addClass('show');
+                  } else {
+                      $('.scroll-top-wrapper').removeClass('show');
+                  }
+              });
+          });
+
+          $(function(){
+
+              $(document).on( 'scroll', function(){
+
+                  if ($(window).scrollTop() > 100) {
+                      $('.scroll-top-wrapper').addClass('show');
+                  } else {
+                      $('.scroll-top-wrapper').removeClass('show');
+                  }
+              });
+
+              $('.scroll-top-wrapper').on('click', scrollToTop);
+          });
+
+          function scrollToTop() {
+              verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+              element = $('body');
+              offset = element.offset();
+              offsetTop = offset.top;
+              $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+          }
+      </script>
+      <!-- / go to top -->
+      
+       
+
+      <style>
+          /* go to top */
+          .scroll-top-wrapper {
+              position: fixed;
+              visibility: hidden;
+              overflow: hidden;
+              text-align: center;
+              z-index: 99999999;
+              width: 64px;
+              height: 64px;
+              right: 5px;
+              bottom: 32px;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              border-bottom-left-radius: 10px;
+              -webkit-transition: all 0.5s ease-in-out;
+              -moz-transition: all 0.5s ease-in-out;
+              -ms-transition: all 0.5s ease-in-out;
+              -o-transition: all 0.5s ease-in-out;
+              transition: all 0.5s ease-in-out;
+          }
+          .scroll-top-wrapper.show:hover {
+              opacity: 0.8;
+              filter: alpha(opacity=80); /* For IE8 and earlier */
+          }
+          .scroll-top-wrapper.show {
+              visibility:visible;
+              cursor:pointer;
+              opacity: 0.4;
+              filter: alpha(opacity=40); /* For IE8 and earlier */
+          }
+          /* /go to top */
+          
+      </style>
+      <!-- /Go To Top -->
+
+
+  </head>
+
+  <body>
+   
+    <!-- main container -->
+    <div class="container-fluid" id="main_container">       
+       <!-- navigation bar -->
+       <div class="row" id="navigation_bar">
+            <div class="navbar navbar-default navbar-fixed-top" rol="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+
+                    <span class="navbar-brand">
+                        <img src="img/logo.png" alt="logo">
+                    </span>
+                </div>
+               
+                    <div class="navbar-collapse collapse" id="main_menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html" target="_blank">Home</a></li>
+                            <li><a href="index.html#about_wrap">About</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="http://blog.alinsworld.com/" target="_blank">Blog</a></li>
+                            <li><a href="index.html#stay_in_touch">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>             
+            </div>
+       </div> <!-- /navigation bar -->
+       
+       <!-- content -->
+       <div class="row">
+           <div class="container-fluid">
+              
+               <!-- Go to top -->
+               <div class="scroll-top-wrapper">
+                   <!-- if use span then need internet to display this icon -->
+                   <img src="img/up.png" alt="go_to_up">
+               </div>
+               <!-- /Go to top -->
+              
+               <!-- Portfolio Part -->
+               <div class="container-fluid" id="portfolio_wrap">  
+                
+                <div class="row"> <!-- Works From -->
+                    <div class="col-xs-12" style="margin:0 0 5px 0">
+                        <!--Success buttons with dropdown menu-->
+                        <div class="btn-group">
+                            <button type="button" data-toggle="dropdown" class="btn btn-success dropdown-toggle">Works From : <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.flickr.com/photos/30668952@N05/sets/72157639965432594/" target="_blank">Flickr</a></li>
+                                <li class="divider"></li>
+                                <li><a href="http://blog.alinsworld.com/archives/category/my_personal/mytry/pcandnet" target="_blank">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  <!-- /Works From -->                  
+                 
+
+                  <!-- ======================================================================================= -->
+                  <!-- ============================== Category List ========================================== -->
+                   <!-- graphic, web, mobile, software, others -->
+                   <div class="row">
+                       <!--only for mobile device-->
+                       <div class="col-xs-12 visible-xs portfolio_menu">
+                           <!--Success buttons with dropdown menu-->
+                          <div class="btn-group portfolioFilter">
+                               <button type="button" data-toggle="dropdown" class="btn btn-success dropdown-toggle">Category : <span class="caret"></span></button>
+                               <ul class="dropdown-menu">
+                                   <li><a href="#" data-filter="*" class="current">All Categories</a></li>
+                                   <li class="divider"></li>
+                                   <li><a href="#" data-filter=".graphic">Graphic Design</a></li>
+                                   <li class="divider"></li>
+                                   <li><a href="#" data-filter=".web">Web Development</a></li>
+                                   <li class="divider"></li>
+                                   <li><a href="#" data-filter=".mobile">Mobile App Development</a></li>
+                                   <li class="divider"></li>
+                                   <li><a href="#" data-filter=".software">Software Development</a></li>
+                                   <li class="divider"></li>
+                                   <li><a href="#" data-filter=".others">Others</a></li>
+                               </ul>
+                           </div>
+                       </div>
+                       
+                       <!--only for desktop device-->
+                       <div class="col-md-12 hidden-xs portfolio_menu">
+                           <!--Success buttons with dropdown menu-->
+                           <div class="btn-group portfolioFilter">
+                               <a href="#" type="button" class="btn btn-success" data-filter="*">All Categories</a>
+                               <a href="#" type="button" class="btn btn-success" data-filter=".graphic">Graphic Design</a>
+                               <a href="#" type="button" class="btn btn-success" data-filter=".web">Web Development</a>
+                               <a href="#" type="button" class="btn btn-success" data-filter=".mobile">Mobile App Development</a>
+                               <a href="#" type="button" class="btn btn-success" data-filter=".software">Software Development</a>
+                               <a href="#" type="button" class="btn btn-success" data-filter=".others">Others</a>
+                           </div>
+                           
+                       </div>                       
+                   </div>
+                   <!-- ============================== /Category List ========================================== -->
+                   <!-- ======================================================================================== -->
+                   
+                   
+
+                   <!-- ======================================================================================== -->
+                   <!-- ============================== Category Items ========================================== -->
+                   <!-- 
+                   How to add portfolio items : 
+                   -----------------------------
+type the coorect category name with the 'rel' attribute like rel="prettyPhoto[pp_gal_graphicsdesigning]" for prettyphoto to open photo in a modal and type correct category name with 'class name' for 'isotop' to filter items. 
+                  thumbnail image must be : 225 x 220 px for better view. 
+                   -->
+                   <div class="row">
+                       <div class="col-md-12 portfolioContainer" id="portfolio_items">
+                           
+                           <!-- ========================== Graphic Design : graphic ======================================= -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/3D/Mars.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Soft: 3D Studio Max"><div ><img src="portfolio/My_Portfolio_Items/graphic_design/3D/MarsThumb.jpg" alt="3D Mars" class="img-thumb"></div></a> <!-- Item: 1 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/3D/ScrewDriver.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Soft: 3D Studio Max"><div ><img src="portfolio/My_Portfolio_Items/graphic_design/3D/ScrewDriverThumb.jpg" alt="Screw Driver" class="img-thumb"></div></a> <!-- Item: 2 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/3D/ShaheedMinar.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Soft: 3D Studio Max"><div ><img src="portfolio/My_Portfolio_Items/graphic_design/3D/ShaheedMinarThumb.jpg" alt="Shaheed Minar" class="img-thumb"></div></a> <!-- Item: 3 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design//3D/ShaheedMinarWithvolumeLight.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Soft: 3D Studio Max"><div ><img src="portfolio/My_Portfolio_Items/graphic_design/3D/ShaheedMinarWithvolumeLightThumb.jpg" alt="Shaheed Minar with Volume Light" class="img-thumb"></div></a> <!-- Item: 4 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Bohnishikha/BohniShikha.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="This is a CD label. I'm using Adobe Illustrator and Photoshop CS4. I created this for a teacher of Bulbul Academy, name A.T.M. Mostofa."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Bohnishikha/BohniShikhaThumb.jpg" alt="Bohni-Shikha" class="img-thumb"></div></a> <!-- Item: 5 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Brochure_Design/Alinsworld_Comp_Train.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Brochure Design. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Brochure_Design/Alinsworld_Comp_Train_Thumb.jpg" alt="Alinsworld Computer Training" class="img-thumb"></div></a> <!-- Item: 6 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Brochure_Design/Alinsworld_Web%20Solution.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Brochure Design. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Brochure_Design/Alinsworld_Web%20SolutionThumb.jpg" alt="Alinsworld Web Solution" class="img-thumb"></div></a> <!-- Item: 7 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/69Monos.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Business Card design. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/69MonosThumb.jpg" alt="69 Monos" class="img-thumb"></div></a> <!-- Item: 8 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/Elance%20Media.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Business Card design. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/Elance%20MediaThumb.jpg" alt="Elance Media" class="img-thumb"></div></a> <!-- Item: 9 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/EPIC_FashionStuio.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Business Card design. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/EPIC_FashionStuioThumb.jpg" alt="EPIC_FashionStuio" class="img-thumb"></div></a> <!-- Item: 10 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/Heartbeat%20Radio%20FM.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Business Card design. Design Idea : My own Idea. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/Heartbeat%20Radio%20FMThumb.jpg" alt="Heartbeat Radio FM" class="img-thumb"></div></a> <!-- Item: 11 -->
+                           
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/ShiktoVisiting%20Card.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Business Card design. Design Idea : Client. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/ShiktoVisiting%20CardThumb.jpg" alt="Rongdhanu Magazine" class="img-thumb"></div></a> <!-- Item: 12 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/SomoyNet_Real.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Business Card design. Design Idea : Real Visiting Card. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/SomoyNet_RealThumb.jpg" alt="Somoynet" class="img-thumb"></div></a> <!-- Item: 13 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/SomoyNet.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Business Card design. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/SomoyNetThumb.jpg" alt="Somoynet" class="img-thumb"></div></a> <!-- Item: 14 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Calendar_Design/Busin_Card_Cal.png" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Business Card Calendar. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Calendar_Design/Busin_Card_CalThumb.jpg" alt="Alinsworld Business Card Calendar" class="img-thumb"></div></a> <!-- Item: 15 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Calendar_Design/DeskCalendar.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Desk Calendar. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Calendar_Design/DeskCalendarThumb.jpg" alt="Alinsworld Desk Calendar" class="img-thumb"></div></a> <!-- Item: 16 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Flyer_Design/BGTTC_Flyer.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Flyer Design. Design Idea : My own. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Flyer_Design/BGTTC_FlyerThumb.jpg" alt="Bangladesh-German Technical Training Center" class="img-thumb"></div></a> <!-- Item: 17 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Flyer_Design/University%20Flyer.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Flyer Design. Design Idea : My own. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Flyer_Design/University%20FlyerThumb.jpg" alt="University Flayer" class="img-thumb"></div></a> <!-- Item: 18 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Magazine_Design/BDGermanTech.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Magazine Design. Design Idea : My own. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Magazine_Design/BDGermanTechThumb.jpg" alt="Bangladesh-German Technical" class="img-thumb"></div></a> <!-- Item: 19 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Magazine_Design/Kesha_Magazine.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Magazine Design. Design Idea : Google.com. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Magazine_Design/Kesha_MagazineThumb.jpg" alt="Billboard" class="img-thumb"></div></a> <!-- Item: 20 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Magazine_Design/PC%20Game.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Magazine Design. Design Idea : My own. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Magazine_Design/PC%20GameThumb.jpg" alt="PC Game" class="img-thumb"></div></a> <!-- Item: 21 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Magazine_Design/Time%20Magazine.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Magazine Design. Design Idea : Google.com. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Magazine_Design/Time%20MagazineThumb.jpg" alt="Time" class="img-thumb"></div></a> <!-- Item: 22 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Poster_Design/CloudCamp.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Poster Design. Design Idea : Google.com. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Poster_Design/CloudCampThumb.jpg" alt="Poster Design" class="img-thumb"></div></a> <!-- Item: 23 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Poster_Design/Johnny%20English.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Poster Design. Design Idea : Google.com. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Poster_Design/Johnny%20EnglishThumb.jpg" alt="Poster Design" class="img-thumb"></div></a> <!-- Item: 24 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Poster_Design/Johnny%20English2.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Poster Design. Design Idea : Google.com. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Poster_Design/Johnny%20English2Thumb.jpg" alt="Poster Design" class="img-thumb"></div></a> <!-- Item: 25 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Poster_Design/Poster_PhotoConte.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Poster Design. Design Idea : Google.com. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Poster_Design/Poster_PhotoConteThumb.jpg" alt="Poster Design" class="img-thumb"></div></a> <!-- Item: 26 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Poster_Design/Retro%20Night.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Poster Design. Design Idea : Google.com. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Poster_Design/Retro%20NightThumb.jpg" alt="Poster Design" class="img-thumb"></div></a> <!-- Item: 27 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Photoshop_Images/OutOfFrame.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Poster Design. Design Idea : Google.com. I'm using Adobe Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Photoshop_Images/OutOfFrameThumb.jpg" alt="Poster Design" class="img-thumb"></div></a> <!-- Item: 28 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Photoshop_Images/TheBrokenHead.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Poster Design. Design Idea : Google.com. I'm using Adobe Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Photoshop_Images/TheBrokenHeadThumb.jpg" alt="Poster Design" class="img-thumb"></div></a> <!-- Item: 29 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/3D%20Graph-1.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/3D%20Graph-1Thumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 30 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Angle%20Frog.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Angle%20FrogThumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 31 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/AngryBird_1.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/AngryBird_1Thumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 32 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/BD%20Vector%20Map.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/BD%20Vector%20MapThumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 33 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Cartoon%20Bug_1.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Cartoon%20Bug_1Thumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 34 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/CD_DVD%20(1).jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/CD_DVD%20(1)Thumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 35 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/CD_DVD%20(2).jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/CD_DVD%20(2)Thumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 36 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/funnyTiger-1.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/funnyTiger-1Thumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 37 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Gift%20Box-3.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Gift%20Box-3Thumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 38 -->
+                        
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Golden%20Vector%20Compass.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Golden%20Vector%20CompassThumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 39 -->
+
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Halloween%20Pumpkin.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Halloween%20PumpkinThumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 40 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Road%20Map%20Of%20Alin_OriginalSize.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. This is my own home map. This was my assignment of my graphics class. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Road%20Map%20Of%20Alin_OriginalSizeThumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 41 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/SandWatch_1.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/SandWatch_1Thumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 42 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Snail.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/SnailThumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 43 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Tweety%20Bird.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Vector Drawing. Design Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Vector_Drawing/Tweety%20BirdThumb.jpg" alt="Vector Drawing" class="img-thumb"></div></a> <!-- Item: 44 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/Microdill.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Business Card design. Design Idea : Real Visiting Card. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Business_Visit_Card/MicrodillThumb.jpg" alt="Microdill" class="img-thumb"></div></a> <!-- Item: 45 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Pattern_Design/DesignWithRealBag%20(5).jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Pattern Design. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Pattern_Design/DesignWithRealBag%20(5)Thumb.jpg" alt="Pattern Design" class="img-thumb"></div></a> <!-- Item: 46 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Pattern_Design/DesignWithRealBag-2%20(1).jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Pattern Design. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Pattern_Design/DesignWithRealBag-2%20(1)Thumb.jpg" alt="Pattern Design" class="img-thumb"></div></a> <!-- Item: 47 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Pattern_Design/DesignWithRealCap-1%20(10).jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Pattern Design. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Pattern_Design/DesignWithRealCap-1%20(10)Thumb.jpg" alt="Pattern Design" class="img-thumb"></div></a> <!-- Item: 48 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Pattern_Design/DesignWithRealCap-1%20(7).jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Pattern Design. I'm using Adobe Illustrator and Photoshop CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Pattern_Design/DesignWithRealCap-1%20(7)Thumb.jpg" alt="Pattern Design" class="img-thumb"></div></a> <!-- Item: 49 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/69Monos2.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Logo Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/69Monos2Thumb.jpg" alt="Logo Design" class="img-thumb"></div></a> <!-- Item: 50 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Alinsworld-7i.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Logo Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Alinsworld-7iThumb.jpg" alt="Logo Design" class="img-thumb"></div></a> <!-- Item: 51 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/FunnyAnimalPlanet.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Logo Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/FunnyAnimalPlanetThumb.jpg" alt="Logo Design" class="img-thumb"></div></a> <!-- Item: 52 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Girl_1.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Logo Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Girl_1Thumb.jpg" alt="Logo Design" class="img-thumb"></div></a> <!-- Item: 53 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Green%20Life.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Logo Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Green LifeThumb.jpg" alt="Logo Design" class="img-thumb"></div></a> <!-- Item: 54 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Kimchi.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Logo Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/KimchiThumb.jpg" alt="Logo Design" class="img-thumb"></div></a> <!-- Item: 55 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Little%20Feet.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Logo Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Little FeetThumb.jpg" alt="Logo Design" class="img-thumb"></div></a> <!-- Item: 56 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Music%20Lab.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Logo Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Logo_Design/Music LabThumb.jpg" alt="Logo Design" class="img-thumb"></div></a> <!-- Item: 57 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Business%20Envelope%20(1).jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Form Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Thumb/Business Envelope1.jpg" alt="Form Design" class="img-thumb"></div></a> <!-- Item: 58 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Business%20Letter_Different.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Form Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Thumb/Business Letter_Different.jpg" alt="Form Design" class="img-thumb"></div></a> <!-- Item: 59 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Business%20Letter_ThankYou.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Form Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Thumb/Business Letter_ThankYou.jpg" alt="Form Design" class="img-thumb"></div></a> <!-- Item: 60 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Money%20Receipt.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Form Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Thumb/Money Receipt.jpg" alt="Form Design" class="img-thumb"></div></a> <!-- Item: 61 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Resume%20Design-2%20(1).jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Form Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Thumb/Resume Design-2 (1).jpg" alt="Form Design" class="img-thumb"></div></a> <!-- Item: 62 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Resume%20Design-2%20(3).jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Form Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Thumb/Resume Design-2 (3).jpg" alt="Form Design" class="img-thumb"></div></a> <!-- Item: 63 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Resume-1%20(1).jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Form Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Thumb/Resume-1 (1).jpg" alt="Form Design" class="img-thumb"></div></a> <!-- Item: 64 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/SwinBurn_Univ_RequestForm.jpg" rel="prettyPhoto[pp_gal_graphic]" class="portfolio-items graphic" title="Form Design. Idea : Google.com. I'm using Adobe Illustrator CS4."><div ><img src="portfolio/My_Portfolio_Items/graphic_design/only_final_output/Form_Design/Thumb/SwinBurn_Univ_RequestForm.jpg" alt="Form Design" class="img-thumb"></div></a> <!-- Item: 65 -->
+                           
+                 
+                           
+                           
+
+                           
+                           <!-- ========================== /Graphic Design : graphic ======================================= -->
+                           
+                           
+                           
+                           
+                           <!-- ========================== Web Development : web =========================================== -->
+                           <!-- all web, I used a common link of google 'https://googledrive.com/host/0BwasIjIvyEvZZV9kc0FIQnNUcWc' then add '/' and website name and full path of image -->
+                           <a href="portfolio/My_Portfolio_Items/web_development/Alinsworld.com/alinsworld.jpg" rel="prettyPhoto[pp_gal_web]" class="portfolio-items web" title="This is my personal responsive website. <br> <a href='http://www.alinsworld.com/' target='blank'>Visit The Site</a>"><div ><img src="portfolio/My_Portfolio_Items/web_development/Alinsworld.com/Thumbnail/AlinsworldThumb.jpg" alt="Alinsworld.com" class="img-thumb"></div></a> <!-- /Item: 1 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/web_development/Alinsworld.com/blog.jpg" rel="prettyPhoto[pp_gal_web]" class="portfolio-items web" title="This is my personal Bangla blog. <br> <a href='http://blog.alinsworld.com/' target='blank'>Visit The Site</a>"><div ><img src="portfolio/My_Portfolio_Items/web_development/Alinsworld.com/Thumbnail/BlogThumb.jpg" alt="Blog.alinsworld.com" class="img-thumb"></div></a> <!-- /Item: 2 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/web_development/Portfolio/portfolio%20screenshot/portfolio_desktop-1.png" rel="prettyPhoto[pp_gal_web]" class="portfolio-items web" title="Practice work. <br> <a href='http://rezwansaki.github.io/portfolio/' target='blank'>Visit The Site</a>"><div ><img src="portfolio/My_Portfolio_Items/web_development/Portfolio/portfolio%20screenshot/Thumbnail/PortfolioThumb.jpg" alt="http://rezwansaki.github.io/portfolio/" class="img-thumb"></div></a> <!-- /Item: 3 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/web_development/travel/travel%20screenshot/Full%20Wide.png" rel="prettyPhoto[pp_gal_web]" class="portfolio-items web" title="Practice work. <br> <a href='http://rezwansaki.github.io/travel/' target='blank'>Visit The Site</a>"><div ><img src="portfolio/My_Portfolio_Items/web_development/travel/travel%20screenshot/travelThumb.jpg" alt="http://rezwansaki.github.io/travel/" class="img-thumb"></div></a> <!-- /Item: 4 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/web_development/youtube-demo-2/screenshot/desktop.jpg" rel="prettyPhoto[pp_gal_web]" class="portfolio-items web" title="Practice work. I tried to develop as like 'Youtube.com' page. <br> <a href='http://rezwansaki.github.io/youtubedemo2/' target='blank'>Visit The Site</a>"><div ><img src="portfolio/My_Portfolio_Items/web_development/youtube-demo-2/screenshot/youtubeDemo2Thumb.jpg" alt="http://rezwansaki.github.io/youtubedemo2/" class="img-thumb"></div></a> <!-- /Item: 5 -->
+                           <!-- ========================== /Web Development : web ========================================== -->
+                           
+                           
+                           
+                           
+                           <!-- ========================== Mobile App Development : mobile ================================= -->
+                           <a href="portfolio/My_Portfolio_Items/mobile_apps_development/android_development/Depression_Checker/depressionChecker.jpg" rel="prettyPhoto[pp_gal_mobile]" class="portfolio-items mobile" title="I developed this app only for android devices. This is a fun app. Anyone can check depression by answering 9 questions in Bangla. <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZWnM3ckNfRmxxZUk' target='blank'>Download Now</a>"><div ><img src="portfolio/My_Portfolio_Items/mobile_apps_development/android_development/Depression_Checker/depressionCheckerThumb.jpg" alt="Depression Checker 1.0.1" class="img-thumb"></div></a> <!-- /Item: 1 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/mobile_apps_development/android_development/nameSays/Screenshot/Screen%20Shot%202015-02-19%20at%2016.02.50.png" rel="prettyPhoto[pp_gal_mobile]" class="portfolio-items mobile" title="I developed this app only for android devices. This is a fun app. Any one know the meaning of their nick name. <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZX2xGazdrS2dBa3c' target='blank'>Download Now</a>"><div ><img src="portfolio/My_Portfolio_Items/mobile_apps_development/android_development/nameSays/Screenshot/Thumbnail/nameSaysThumb.jpg" alt="Name Says 1.0.0" class="img-thumb"></div></a> <!-- /Item: 2 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/mobile_apps_development/android_development/Vegetable_Power_Bangla/vegetablePower.jpg" rel="prettyPhoto[pp_gal_mobile]" class="portfolio-items mobile" title="I developed this app only for android devices. This is a unicode Bangla app. This was my first developing android app. <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZRkxWM3lacWhyeUE' target='blank'>Download Now</a>"><div ><img src="portfolio/My_Portfolio_Items/mobile_apps_development/android_development/Vegetable_Power_Bangla/vegetablePowerThumb.jpg" alt="Vegetable Power 1.0.2" class="img-thumb"></div></a> <!-- /Item: 3 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/mobile_apps_development/android_development/Bangla%20Jokes/splash.jpg" rel="prettyPhoto[pp_gal_mobile]" class="portfolio-items mobile" title="I developed this app only for android devices. This is a unicode Bangla app. <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZbnRLbGpZSVRvUDA' target='blank'>Download Now</a>"><div ><img src="portfolio/My_Portfolio_Items/mobile_apps_development/android_development/Bangla%20Jokes/splash_thumb.jpg" alt="Bangla Jokes 1.0" class="img-thumb"></div></a> <!-- /Item: 4 -->
+                           <!-- ========================== /Mobile App Development : mobile ================================= -->
+                           
+                           
+                           
+                           
+                           <!-- ========================== Software Development : software ================================= -->
+                           <a href="portfolio/My_Portfolio_Items/software_development/VB%20208/Alin_WebBrowser%20v.1.2/screenshot.jpg" rel="prettyPhoto[pp_gal_software]" class="portfolio-items software" title="I developed this sotware by using VB.Net. This is my practice work. Just a simple web browser that can browse any site. It needs dotNet frameworks. <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZTDR6VlA1dk1sOG8' target='blank'>Download Now</a>"><div ><img src="portfolio/My_Portfolio_Items/software_development/VB%20208/Alin_WebBrowser%20v.1.2/alinBrowserThumb.jpg" alt="Web Browser" class="img-thumb"></div></a> <!-- /Item: 1 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/software_development/VB%20208/Alin's_Timer_v.1.0/screenshot.jpg" rel="prettyPhoto[pp_gal_software]" class="portfolio-items software" title="I developed this sotware by using VB.Net. This is my practice work. Just a simple timer software with simaple message. It needs dotNet frameworks. <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZSWQ3dXBNM3l6R3c' target='blank'>Download Now - 'only exe file' </a> <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZSjNWQ2gwZ2R5N3M' target='blank'>Download Now - only 'setup file'  </a>"><div ><img src="portfolio/My_Portfolio_Items/software_development/VB%20208/Alin's_Timer_v.1.0/screenshotThumb.jpg" alt="Timer 1.0" class="img-thumb"></div></a> <!-- /Item: 2 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/software_development/VB%20208/Alin's_Text2Speech_v.1.2/screenshot.jpg" rel="prettyPhoto[pp_gal_software]" class="portfolio-items software" title="I developed this sotware by using VB.Net. This is my practice work. Simple text to speech. It needs dotNet frameworks. <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZUEg2OTJIOXFNZkU'  target='blank'>Download Now</a>"><div ><img src="portfolio/My_Portfolio_Items/software_development/VB%20208/Alin's_Text2Speech_v.1.2/Text2SpeechThumb.jpg" alt="Text To Speech v.1.2" class="img-thumb"></div></a> <!-- /Item: 3 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/software_development/VB%20208/alinDictionary/screenshot.jpg" rel="prettyPhoto[pp_gal_software]" class="portfolio-items software" title="I developed this sotware by using VB.Net. This is my practice work. English to Bangla dictionary whick contains 21000+ words. It needs dotNet frameworks. <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZZ0xVUWxETXBud1U' target='blank'>Download Now</a>"><div ><img src="portfolio/My_Portfolio_Items/software_development/VB%20208/alinDictionary/screenshotThumb.jpg" alt="alindict" class="img-thumb"></div></a> <!-- /Item: 4 -->
+                           
+                           
+                                                     
+                           <!-- ========================== /Software Development : software ================================= -->
+                           
+                           
+                           
+                           
+                        <!-- ========================== Others : others ================================================= -->
+                           <a href="portfolio/My_Portfolio_Items/others/adobe_flash/CrossWord/CrossWord.jpg" rel="prettyPhoto[pp_gal_others]" class="portfolio-items others" title="Soft : Flash <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZbEFQVmwxTEZiaTA' target='blank'>Download Now</a>"><div ><img src="portfolio/My_Portfolio_Items/others/adobe_flash/CrossWord/CrossWordThumb.jpg" alt="Cross Word" class="img-thumb"></div></a> <!-- /Item: 1 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/others/E-Book%20Create/Ajana%20Voyokor%20Sundor%20Sob%20Pranir%20Shondhane_part-1/janaAjanaCoverPage%20Low.jpg" rel="prettyPhoto[pp_gal_others]" class="portfolio-items others" title="I create this ebook by using MS Word. <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZcTktNW1ZTmxhTTA' target='blank'>Download Now</a>"><div ><img src="portfolio/My_Portfolio_Items/others/E-Book%20Create/Ajana%20Voyokor%20Sundor%20Sob%20Pranir%20Shondhane_part-1/janaAjanaCoverPageThumb.jpg" alt="Jana Ajana - Ebook" class="img-thumb"></div></a> <!-- /Item: 2 -->
+                           
+                           <a href="portfolio/My_Portfolio_Items/others/presentation_making/screenshot.jpg" rel="prettyPhoto[pp_gal_others]" class="portfolio-items others" title="I create this presentaion by using MS Powerpoint. <br> <a href='https://drive.google.com/open?id=0BwasIjIvyEvZdmw1ZDlaZzBhdkk' target='blank'>Download Now</a>"><div ><img src="portfolio/My_Portfolio_Items/others/presentation_making/screenshotthumb.jpg" alt="Presentation Making" class="img-thumb"></div></a> <!-- /Item: 3 -->
+                        <!-- ========================== /Others : others ================================================= -->
+
+                       </div>
+                   </div> 
+                   <!-- ============================== Category Items ========================================== -->
+                   <!-- ======================================================================================== -->
+                   
+                   
+
+               </div>
+               <!-- /Portfolio Part-->
+               
+           </div>
+       </div> <!-- /content -->
+        
+       <!-- footer -->
+        <div class="row navbar-fixed-bottom" id="footer_wrap">
+           <div class="container-fluid">
+               <!-- footer bottom -->
+               <div class="row" id="footer_bottom">
+                   <!-- copyright info -->
+                   <div class="col-md-6 col-xs-12 left-align">
+                       Copyright &copy; 2008-<script type="text/javascript">
+                       document.write(new Date().getFullYear());
+                       </script> Alinsworld | All Rights Reserved
+                   </div> <!-- /copyright info -->
+                   
+                   <!-- designed and developed by -->
+                   <div class="col-md-6 col-xs-12 right-align">
+                       Designed and Developed by Alin.
+                   </div> <!-- /designed and developed by -->
+               </div> <!-- /footer bottom -->
+           </div>
+       </div> <!-- /footer -->
+        
+        
+        
+        <!-- Lazy Load System : load images when scroll down -->    
+        <script type="text/javascript" charset="utf-8">
+            $(function() {
+                $("img.lazy").lazyload({
+                    effect : "fadeIn"
+                });
+
+            });
+        </script> 
+        <!-- /Lazy Load System -->
+    </div> <!-- /main container -->
+    
+  </body>
+  
+</html>
