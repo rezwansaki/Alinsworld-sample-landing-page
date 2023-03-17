@@ -8,8 +8,6 @@ Responsive for : Desktop, Tab, Mobile device <br>
 <li>Alinsworld Portfolio Page</li>
 </ul>
 
-Live Demo : https://github.com/rezwansaki/alinsworld-demo/index.html <br>
-
 ## Developer
 
 Md. Rezwan Saki Alin (https://www.alinsworld.com)
