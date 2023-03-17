@@ -1,5 +1,0 @@
-
-
-  Data folder must be in root directory.
-
-  Just click 'alinDictionary.exe' file to run. 
