@@ -8,7 +8,7 @@ Responsive for : Desktop, Tab, Mobile device <br>
 <li>Alinsworld Portfolio Page</li>
 </ul>
 
-Live Demo : http://rezwansaki.github.io/Alinsworld-sample-landing-page/index.html <br>
+Live Demo : https://github.com/rezwansaki/alinsworld-demo/index.html <br>
 
 ## Developer
 
